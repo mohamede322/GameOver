@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS Links -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Nerko+One&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS Links -->
+    <title>Document</title>
+  </head>
+  <body>
+    <div
+      class="d-none loader-container position-absolute vh-100 w-100 d-flex justify-content-center align-items-center"
+    >
+      <span class="loader"></span>
+    </div>
+    <header class="main-header">
+      <div class="wrapper-img overflow-hidden">
+        <img src="imgs/wraper.png" alt="games-overlay" class="w-100 h-100" />
+      </div>
+      <nav class="navbar navbar-expand-lg mx-auto p-0">
+        <div class="container-sm navbar-container rounded-4 py-2 shadow-lg">
+          <h5 class="navbar-brand text-light m-0 fs-3">
+            <img src="imgs/logo-sm.png" alt="logo" class="logo me-2" />GAME
+            REVIEWS
+          </h5>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a
+                  class="nav-link active text-light"
+                  href="#"
+                  aria-valuetext="mmorpg"
+                  >MMORPG</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" aria-valuetext="shooter" href="#"
+                  >SHOOTER</a
+                >
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link text-light" aria-valuetext="sailing" href="#"
+                  >SAILING</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link text-light"
+                  aria-valuetext="permadeath"
+                  href="#"
+                  >PERMADEATH</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link text-light"
+                  aria-valuetext="superhero"
+                  href="#"
+                  >SUPERHERO</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" aria-valuetext="pixel" href="#"
+                  >PIXEL</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <header
+      class="d-none container py-4 details-header d-flex justify-content-between align-items-center"
+    >
+      <h2 class="details-title text-white">Details Game</h2>
+      <button class="btn-close btn-close-white" id="closeBtn"></button>
+    </header>
+    <main>
+      <div class="container">
+        <div class="row pb-5" id="myData"></div>
+        <div class="row pb-5" id="detailsGame"></div>
+      </div>
+    </main>
+
+    <!-- JS File -->
+    <script type="module" src="js/main.js"></script>
+    <!-- JS File -->
+    <!-- Bootstrap Script -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- Bootstrap Script -->
+  </body>
+</html>

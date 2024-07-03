@@ -1,0 +1,129 @@
+:root {
+  --main-color: #272b30;
+  --seconde-color: #32383e;
+  --color-text: #fff;
+  --btn-main-color: #272729;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Nerko One", cursive;
+}
+body {
+  background-color: var(--main-color);
+  font-family: "Comfortaa", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.logo {
+  width: 40px;
+}
+
+.wrapper-img {
+  height: 200px;
+}
+.wrapper-img img {
+  object-fit: cover;
+}
+.navbar {
+  transform: translateY(-32px);
+}
+.navbar-container {
+  background-color: rgb(58, 73, 123);
+}
+
+.nav-link {
+  font-size: 0.775em;
+}
+.nav-link.active {
+  color: #09c !important;
+}
+.free {
+  font-size: 12px;
+}
+.card {
+  filter: grayscale(0.7);
+  transform: scale(1);
+  transition: 0.5s all;
+  cursor: pointer;
+}
+.card:hover {
+  filter: grayscale(0);
+  transform: scale(1.03);
+}
+.card-body {
+  min-height: 350px;
+}
+.card-footer span {
+  font-size: 10px;
+  background-color: var(--seconde-color);
+}
+
+.loader-container {
+  z-index: 100;
+  background-color: rgba(39, 43, 48, 0.8);
+}
+
+.loader {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+  border: 3px solid;
+  border-color: #fff #fff transparent transparent;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+.loader::after,
+.loader::before {
+  content: "";
+  box-sizing: border-box;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  border: 3px solid;
+  border-color: transparent transparent #ff3d00 #ff3d00;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  box-sizing: border-box;
+  animation: rotationBack 0.5s linear infinite;
+  transform-origin: center center;
+}
+.loader::before {
+  width: 32px;
+  height: 32px;
+  border-color: #fff #fff transparent transparent;
+  animation: rotation 1.5s linear infinite;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotationBack {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+
+@media (min-width: 992px) {
+  .navbar-container {
+    width: 75%;
+  }
+}
