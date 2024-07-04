@@ -36,8 +36,10 @@ async function getDetails(id) {
   detailsGame.classList.remove("d-none");
   detailsHeader.classList.remove("d-none");
   loader.classList.remove("d-none");
+  document.body.style.overflow = "hidden";
   let currentGame = await details(id).finally(() => {
     loader.classList.add("d-none");
+    document.body.style.overflow = "auto";
   });
   let gameDescription = currentGame.description;
   let gameTitle = currentGame.title;
@@ -90,8 +92,10 @@ async function getDetails(id) {
 
 async function displayData() {
   loader.classList.remove("d-none");
+  document.body.style.overflow = "hidden";
   displayedGames = await getGames(currentCat).finally(() => {
     loader.classList.add("d-none");
+    document.body.style.overflow = "auto";
   });
   let box = "";
 
